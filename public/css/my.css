@@ -1,0 +1,110 @@
+@font-face {
+    font-family: 'BYekan';
+    src: url('/fonts/BYekan/BYekan.eot');
+    src: url('/fonts/BYekan/BYekan.eot') format('embedded-opentype'),
+         url('/fonts/BYekan/BYekan.woff') format('woff'),
+         url('/fonts/BYekan/BYekan.ttf') format('truetype');
+         font-weight: normal;
+         font-style: normal;
+}
+
+body{
+    font-family: 'BYekan',"Raleway", sans-serif !important; 
+     
+    /*direction: rtl !important;*/
+}
+
+.bg-light {
+    background-color: #e8e9ea!important;
+}
+
+.container1 {
+    background-color: white;
+    width: 100%;
+    padding-top: 56%; /* 1:1 Aspect Ratio */
+    position: relative; /* If you want text inside of it */
+    overflow: hidden;
+}
+
+/* If you want text inside of the container */
+.keep-aspect {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background: rgba(254, 209, 54, 0.9);
+}
+
+.container1:hover .overlay {
+  opacity: .9;
+}
+
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+
+.myAlert-top{
+    font-size:20px;
+    position: fixed;
+    top: 85px; 
+    right:35%;
+    width: 30%;
+    text-align: center;
+  direction: rtl;
+  display: none;
+}
+.myAlert-corner{
+    font-size:20px;
+    position: fixed;
+    top: 75%; 
+    right:2%;
+    /*width: 30%;*/
+    text-align: center;
+  direction: rtl;
+  z-index:99;
+  background-color:thistle;
+  color:grey;
+  
+}
+.myAlert-corner a{
+    color:indigo !important;
+}
+.myAlert-corner a:hover{
+    color:darkviolet !important;
+}
+
+.w-tabs-section-header-h{
+    margin-bottom: 20px;
+    margin-right: 20px;
+}
+
+
+/*googlle map*/
+.gm-style .gm-style-iw {
+    text-align: center;
+   font-size: 16px;
+   font-weight: bold;
+   font-family: 'BYekan';
+   text-transform: uppercase;
+}
+
